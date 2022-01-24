@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&family=Roboto:wght@900&family=Urbanist:ital,wght@0,100;0,200;0,300;1,200;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&family=Sofadi+One&family=Urbanist:ital,wght@0,100;0,200;0,300;1,200;1,300&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  background: white;
+  font-family: 'Josefin Sans', sans-serif;
+}
+.navbar{
+    border-bottom: 3px solid grey;
+    margin-bottom: 8px;
+    margin-top: 83px;
+}
+.navbar img{
+    background: #9C3030;
+    position: absolute;
+    top: 19px;
+    height: 50px;
+    width: 54px;
+}
+.navbar .logo__text{
+    position: absolute;
+    width: 190px;
+    height: 50px;
+    top: 19px;
+    font-family: Sofadi One;
+    left: 60px;
+    padding-top: 11px;
+    text-align: center;
+    font-size: 41px;
+    line-height: 35px;
+    border: 3px solid ;
+    color: #9C3030;
+}
+.dash{
+    margin-left: 270px;
+    top: 35px;
+    position: absolute;
+    width: 365px;
+    height: 42px;
+    font-family: Roboto;
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 28px;
+    color: #5B5B5B;
+}
+.fa-bars{
+    padding-right: 10px;
+    color: #5B5B5B;
+}
+.icons{
+    margin-left: 1090px;
+    position: absolute;
+    top: 32px;
+    font-weight: 900;
+    font-size: 20px;
+    font-family: Roboto;
+    line-height: 28px;
+    color: #5B5B5B;
+}
+.icons span{
+    position: absolute;
+    font-size: 15px;
+    color: white;
+    right: 182px;
+    background: red;
+    width: 18px;
+    height: 19px;
+    border-radius: 100px;
+    text-align: center;
+}
+.fa-bell{
+    padding-right: 55px;
+    font-size: 27px;
+    top: 8px;
+    position: relative
+
+}
+.icons img{
+    position: absolute;
+    background: none;
+    width: 40px;
+    height: 40px;
+    right: 140px;
+    top: 0;
+}
+.icons .fa-arrow-down{
+    position: absolute;
+    font-size: 16px;
+    top: 9px;
+    padding-left: 7px;
+}
+
+.wrapper{
+  display: flex;
+}
+.header ul{
+    float: right;
+    
+}
+.header ul li{
+    display: inline;
+    padding-right: 11px;
+    color: #e0e4e8;
+}
+.header ul li span{
+    color: #5B5B5B;
+    font-family: Roboto;
+
+}
+.fa-arrow-right{
+    padding-right: 13px;
+    font-size: 14px;
+    color: #e0e4e8;
+}
+.wrapper .sidebar{
+  width: 200px;
+  height: 100%;
+  border-right: 3px solid #e0e4e8;
+  border-top: 3px solid #e0e4e8;
+  padding: 30px 0px;
+  position: fixed;
+}
+.wrapper .sidebar ul li{
+  padding: 15px;
+}    
+
+.wrapper .sidebar ul li a{
+  color: #5B5B5B;
+  font-family: Roboto;
+  display: block;
+}
+.wrapper .sidebar ul li a span{
+    font-family: Roboto;
+}
+.wrapper .sidebar ul li a .fas{
+  width: 25px;
+}
+
+.wrapper .sidebar ul li a .fa-arrow-down{
+    position: absolute;
+    left: 160px;
+}
+.wrapper .main_content{
+  width: 100%;
+  
+  margin-left: 210px;
+  border-top: 3px solid #e0e4e8;
+  border-bottom: 3px solid #e0e4e8;
+  height: 520px;
+  border-left: 3px solid #e0e4e8;
+}
+.wrapper .foot{
+    position: absolute;
+    border: 2px solid #e0e4e8;
+    top: 624px;
+    padding-left: 14px;
+    padding-top: 15px;
+    left: 210px;
+    font-family: Roboto;
+    color: #5B5B5B;
+}
+.wrapper .foot ul{
+    margin-left: 600px;
+    float: right;
+    display: flex;
+}
+.wrapper .foot ul li{
+    position: relative;
+    padding-right: 15px;
+    bottom: 15px;
+    color: #5B5B5B;
+}
+.wrapper .foot ul li a{
+    font-family: Roboto;
+}
+
+.wrapper .main_content .header{
+  padding: 20px;
+  background: #fff;
+  color: #717171;
+  margin-left: 12px;
+  font-family: Roboto;
+}
+/*
+.sidebar ul ul{
+    position: absolute;
+    padding: 0;
+    left: 1px;
+    margin: 0;
+	opacity: 0;
+	visibility: hidden;
+	transition: top .3s;
+}
+.sidebar ul ul li:hover{
+	color: black;
+	background: #5B5B5B;
+}
+.sidebar ul li:hover >ul{
+	top: 450px;
+	opacity: 1;
+	visibility: visible;
+}
+.sidebar ul ul li{
+	position: relative;
+    background: #e0e4e8;
+    margin-bottom: 4px;
+	width: 196px;
+    height: 40px;
+	float: none;
+	display: list-item;
+	border-bottom: 1px solid rgba(0,0,0,0.3);
+}*/
+ul #nested1,ul #nested2,ul #nested3{
+    position: relative;
+    height: 11px;
+    text-align: center;
+    background: #e0e4e8;
+    font-family: Roboto;
+
+    margin-bottom: 5px;
+    padding-bottom: 22px;
+	cursor: pointer;
+	display: none;
+}
+ul #nested1:hover,ul #nested2:hover,ul #nested3:hover{
+    background: #5B5B5B;
+    color: white;
+}

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Side Navigation Bar</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="images/logo box white.png" alt="logo">
+            <span class="logo__text">
+                e-Lab-Lis
+            </span>
+        </div>
+        <div class="dash">
+            <i class="fas fa-bars"></i>
+            Your Laboratory Name
+        </div>
+        <div class="icons">
+            <i class="fas fa-bell"></i><span>1</span>
+            <img class="avatar" src="images/—Pngtree—male avatar simple cartoon design_5230556 (1).png" alt="user">
+            Isaac Odinaka
+            <i class="fas fa-arrow-down"></i>
+        </div>
+    </nav>
+
+<div class="wrapper">
+    <div class="main_content">
+        <div class="header">Blank Page
+            <ul>
+                <li>Home</li>
+                <i class="fas fa-arrow-right"></i><li>Page 1</li>
+                <i class="fas fa-arrow-right"></i><li><span>Page 2</span></li>
+
+            </ul>
+        </div>
+    </div>
+    <div class="foot">
+        e-Lab LIS by Netwalkers NG (c) 2022. All rights reserved. 
+        <ul>
+            <li><a>About Us</a> |</li>
+            <li><a>Contact Us</a> |</li>
+            <li><a>Terms of Service</a> |</li>
+            <li><a>Privacy Policy</a></li>
+        </ul>
+    </div>
+    <div class="sidebar">
+        <ul>
+            <li class="active"><a href="#"><i class="fas fa-building"></i>Front Office<i class="fas fa-arrow-down"></i></i></a></li>
+            <li><a href="#"><i class="fas fa-syringe"></i>Phlebotomy<i class="fas fa-arrow-down" ></i></a></li>
+            <li><a href="#"><i class="fas fa-flask"></i>Laboratory<i class="fas fa-arrow-down" ></i></a></li>
+            <li><a href="#"><i class="fas fa-book-open"></i>Admin<i class="fas fa-arrow-down" ></i></a></li>
+            <li><a href="#"><i class="fas fa-motorcycle"></i>Dispatch<i class="fas fa-arrow-down" ></i></a></li>
+            <li><a href="#"><i class="fas fa-microscope"></i>Analyzers<i class="fas fa-arrow-down" ></i></a></li>
+            <li><a href="#"><i class="fas fa-check-double"></i>QC<i class="fas fa-arrow-down" ></i></a></li>
+            <li><a href="#"><i class="fas fa-money-bill"></i>Account<i class="fas fa-arrow-down" ></i></a></li>
+            <li id="toggle1"><a href="#"><i class="fas fa-archive" id="arc"></i><span id="toggle2">Inventory</span><i class="fas fa-arrow-down" id="arrow1"></i></a></li>
+                <li id="nested1">Option 1</li>
+                <li id="nested2">Option 2</li>
+                <li id="nested3">Option 3</li>
+                </ul> 
+    </div>
+    </div>
+    <script>
+        let toggle1 = document.querySelector("#toggle1");
+        let nested1 = document.querySelector("#nested1");
+	    let nested2 = document.querySelector("#nested2");
+	    let nested3 = document.querySelector("#nested3");
+        let arrow1 = document.querySelector("#arrow1");
+        let arc = document.querySelector("#arc");
+
+        toggle1.addEventListener('click',()=>{
+		if(nested1.style.display == "block" || nested2.style.display == "block" || nested3.style.display == "block"){
+           nested1.style.display = "none";
+           nested2.style.display = "none";
+           nested3.style.display = "none";
+           arrow1.style.transform = "rotate(0deg)";
+           arrow1.style.color = "#717171";
+           arrow1.style.textShadow = "none";
+		}
+		else{
+			nested1.style.display = "block";
+			nested2.style.display = "block";
+			nested3.style.display = "block";
+            arc.style.color = "red";
+            toggle2.style.borderBottom = "2px solid red";
+		    arrow1.style.transform = "rotate(180deg)";
+            arrow1.style.color = "#717171";
+           
+		}
+       
+    });   
+    </script>
+</body>
+</html>
